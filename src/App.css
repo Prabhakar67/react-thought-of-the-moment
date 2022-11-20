@@ -1,0 +1,16 @@
+
+.card{
+    display: flex;
+    background: darkseagreen;
+    text-align: center;
+    margin-top: 220px;
+}
+
+.card-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.card-text{
+    font-size: 25px;
+}
