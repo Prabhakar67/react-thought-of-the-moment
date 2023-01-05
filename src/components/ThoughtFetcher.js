@@ -5,6 +5,9 @@ function ThoughtFetcher() {
     let [advice, setadvice] = useState('');
 
     useEffect(() => {
+
+        // Method 1
+        
         let url = 'https://api.adviceslip.com/advice';
         let fetchData = async () => {
             try {
@@ -19,7 +22,17 @@ function ThoughtFetcher() {
         }
 
         fetchData()
-    })
+
+        // Method 2
+
+        // fetch("https://api.adviceslip.com/advice")
+        //     .then((res) => res.json())
+        //     .then((json) => {
+        //         setadvice(json.slip.advice);
+        //         console.log(json.slip.advice);
+        //     })
+    }, [])
+
     return (
         <>
             <div className="card">
